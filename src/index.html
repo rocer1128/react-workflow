@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>SmartCell</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="root" style="height: 100%"></div>
+  <script typet="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.ajax({
+        url: 'http://www.afctoolz.top:5000/wechat/get_jsapi_signature?url=http://www.afctoolz.top:3000/',
+        type: 'GET',
+        error: function (err) {
+          console.log('error: ', err);
+        },
+        success: function (data, status) {
+          console.log('status, data: ', status, data);
+          wx.config({
+            debug: true,
+            appId: data.data.appId,
+            timestamp: data.data.timestamp,
+            nonceStr: data.data.nounceStr,
+            signature: data.data.signature,
+            jsApiList: ['checkJsApi', 'scanQRCode']
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

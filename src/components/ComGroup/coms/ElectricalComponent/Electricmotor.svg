@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_01"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:agg="http://www.example.com"
+     x="0px" y="0px" width="89.998px" height="89.998px"
+     viewBox="0 0 89.998 89.998" enable-background="new 0 0 89.998 89.998"
+     xml:space="preserve">
+
+   
+    <script type="text/ecmascript" xlink:href="smil.user.js"/>
+	
+    <style type="text/css">
+        <![CDATA[
+
+	.stroked{
+		stroke-width:0.3;
+		stroke-linecap:round;
+		stroke-linejoin:round;
+		stroke: #6D6D6D;
+
+	}
+	
+      ]]>
+    </style>
+
+    <radialGradient id="bladeGradient" cx="57.5923" cy="27.2598" r="33.7129" gradientUnits="userSpaceOnUse">
+        <stop offset="0" style="stop-color:#FFFFFF"/>
+        <stop offset="0.1932" style="stop-color:#FCFCFC"/>
+        <stop offset="0.327" style="stop-color:#F3F3F3"/>
+        <stop offset="0.4428" style="stop-color:#E4E4E4"/>
+        <stop offset="0.5485" style="stop-color:#CECECE"/>
+        <stop offset="0.6472" style="stop-color:#B2B2B2"/>
+        <stop offset="0.7408" style="stop-color:#8F8F8F"/>
+        <stop offset="0.8304" style="stop-color:#666666"/>
+        <stop offset="0.9152" style="stop-color:#373737"/>
+        <stop offset="0.9963" style="stop-color:#030303"/>
+        <stop offset="1" style="stop-color:#000000"/>
+    </radialGradient>
+
+    <radialGradient id="bigBossGradient" cx="44.998" cy="45.001" r="11.6394" gradientUnits="userSpaceOnUse">
+        <stop offset="0" style="stop-color:#E5E5E5"/>
+        <stop offset="0.3123" style="stop-color:#E1E1E1"/>
+        <stop offset="0.6271" style="stop-color:#D5D5D5"/>
+        <stop offset="0.9422" style="stop-color:#C1C1C1"/>
+        <stop offset="1" style="stop-color:#BDBDBD"/>
+    </radialGradient>
+
+    <radialGradient id="bossGradient" cx="44.9976" cy="45.001" r="9.1816" gradientUnits="userSpaceOnUse">
+        <stop offset="0" style="stop-color:#BFBFBF"/>
+        <stop offset="0.2723" style="stop-color:#BBBBBB"/>
+        <stop offset="0.547" style="stop-color:#AFAFAF"/>
+        <stop offset="0.8217" style="stop-color:#9B9B9B"/>
+        <stop offset="1" style="stop-color:#8A8A8A"/>
+    </radialGradient>
+
+    <radialGradient id="ringGradient" cx="-36.3247" cy="-47.3213" r="176.7561" gradientUnits="userSpaceOnUse">
+        <stop offset="0" style="stop-color:#E8E8E8"/>
+        <stop offset="0.1457" style="stop-color:#DDDDDD"/>
+        <stop offset="0.4059" style="stop-color:#BEBEBE"/>
+        <stop offset="0.748" style="stop-color:#8C8C8C"/>
+        <stop offset="1" style="stop-color:#636363"/>
+    </radialGradient>
+
+    <linearGradient id="bodyGradient" gradientUnits="userSpaceOnUse" x1="-11.8765" y1="-14.4316" x2="91.7905"
+                    y2="93.9019">
+        <stop offset="0" style="stop-color:#FFFFFF"/>
+        <stop offset="0.2077" style="stop-color:#ECECEC"/>
+        <stop offset="0.627" style="stop-color:#BBBBBB"/>
+        <stop offset="1" style="stop-color:#8A8A8A"/>
+    </linearGradient>
+
+    <defs>
+
+
+        <path id="blade" fill="url(#bladeGradient)" class="stroked" d="
+	M38.203,35.551c-0.161-0.199-0.322-0.397-0.482-0.596c-5.708-7.062-7.493-16.519-4.75-25.176c0.624-1.963,1.635-2.773,3.686-2.952
+	c3.828-0.331,7.557-0.204,11.353,0.391c1.642,0.256,2.086,1.313,1.122,2.666c-5.251,7.375-6.841,14.18-5.396,23.117
+	c0.023,0.141,0.047,0.281,0.067,0.42"/>
+
+        <circle id="boss" cx="44.999" cy="44.999" r="9.181"/>
+
+    </defs>
+
+    
+
+    <circle  cx="44.999" cy="45" r="0.988"/>
+
+    
+
+    <g>
+        <animateTransform id="rotate" attributeName="transform" attributeType="XML" type="rotate" 
+                          from="0 45 45" to="360 45 45" begin="0s" dur="param(dur) 10s" repeatCount="param(rc) 0"/>
+
+        <use xlink:href="#blade" transform="rotate(0 45 45)" overflow="visible"/>
+        <use xlink:href="#blade" transform="rotate(45 45 45)" overflow="visible"/>
+        <use xlink:href="#blade" transform="rotate(90 45 45)" overflow="visible"/>
+        <use xlink:href="#blade" transform="rotate(135 45 45)" overflow="visible"/>
+        <use xlink:href="#blade" transform="rotate(180 45 45)" overflow="visible"/>
+        <use xlink:href="#blade" transform="rotate(225 45 45)" overflow="visible"/>
+        <use xlink:href="#blade" transform="rotate(270 45 45)" overflow="visible"/>
+        <use xlink:href="#blade" transform="rotate(315 45 45)" overflow="visible"/>
+    </g>
+
+    
+	
+    <script type="text/ecmascript" xlink:href="param.js" /> 
+</svg>

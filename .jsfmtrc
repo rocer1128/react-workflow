@@ -1,0 +1,55 @@
+{
+  "plugins": [
+    "esformatter-quotes",
+    "esformatter-braces",
+    "esformatter-jsx",
+    "esformatter-spaced-lined-comment"
+  ],
+
+
+  "jsx": {
+    "attrsOnSameLineAsTag": false,        // move each attribute to its own line 
+    "maxAttrsOnTag": 5,                   // if lower or equal than 3 attributes, they will be kept on a single line 
+    "firstAttributeOnSameLine": false,    // keep the first attribute in the same line as the tag 
+    "alignWithFirstAttribute": false,     // do not align attributes with the first tag 
+    "spaceInJSXExpressionContainers": "", // default to one space. Make it empty if you don't like spaces between JSXExpressionContainers
+    "removeSpaceBeforeClosingJSX": false, // default false. if true <React.Something /> => <React.Something/> 
+    "closingTagOnNewLine": true,          // default false. if true attributes on multiple lines will close the tag on a new line 
+    "JSXAttributeQuotes": "double",       // possible values "single" or "double". 
+    "htmlOptions": {                      // same as the ones passed to js-beautifier.html 
+      "indent_size": 2,
+      "indent_char": " ",
+      "indent_with_tabs": false,
+      "wrap_line_length": 300 
+    }
+  },
+
+  "quotes": {
+    "type": "double",
+    "avoidEscape": false
+  },
+
+  "indent": {
+    "value": "  " // four spaces, b.
+  },
+
+  "whiteSpace": {
+    "before": {
+      "ArgumentList": 0,
+      "ArgumentListObjectExpression": 0,
+      "ArgumentListFunctionExpression": 0,
+      "ArgumentListArrayExpression": 0,
+      "ObjectPatternClosingBrace": 1,
+      "CatchParameterList": 0
+    },
+    "after": {
+      "ArgumentList": 0,
+      "ArgumentListObjectExpression": 1,
+      "ArgumentListFunctionExpression": 1,
+      "ArgumentListArrayExpression": 1,
+      "CatchParameterList": 0,
+      "FunctionReservedWord": 1,
+      "ObjectPatternOpeningBrace": 1
+    }
+  }
+}

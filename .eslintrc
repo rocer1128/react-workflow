@@ -1,0 +1,80 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": [
+    "babel",
+    "react",
+    "promise"
+  ],
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "__DEV__": false,
+    "__TEST__": false,
+    "__PROD__": false,
+    "__COVERAGE__": false
+  },
+  "rules": {
+    // indentation
+    "indent": 0,
+
+    "no-multiple-empty-lines": [2, {
+      "max": 1,
+      "maxEOF": 0,
+      "maxBOF": 0
+    }],
+
+    // strings
+    "quotes": [2, "double", "avoid-escape"],
+
+    // make it meaningful
+    "prefer-const": 1,
+
+    // keep it simple
+    "complexity": [1, 50],              //限制复杂度 （resource.js 19行）
+    /*复杂度表现为独立现行路径条数，例如下面例子复杂度为3
+        function a(x) {
+          if (true) {
+              return x;         // 1st path
+          } else if (false) {
+              return x+1;       // 2nd path
+          } else {
+              return 4;         // 3rd path
+          }
+        }
+    */
+
+    // react
+    "react/prefer-es6-class": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-indent": 0,
+
+    //add
+    // "eol-last": 0,                     //要求或禁止文件末尾保留一行空行
+    "react/jsx-first-prop-new-line": 0,   //标签第一个属性要在新的一行
+    "react/jsx-boolean-value": 0,         //value={true}应写为value
+    "max-len": [1, 200, 4],              //最大长度
+    "react/jsx-indent-props": 0,          //html标签前的空格
+    "no-underscore-dangle": 0,            //禁止标识符中有悬空下划线
+    "jsx-a11y/href-no-hash": 0,           //<a>标签href链接地址不能为#
+    "no-plusplus": 0,                     //禁止使用i++ 
+    "consistent-return": 0 ,              //要求使用一致的 return 语句,关闭规则表示允许函数根据代码分支有不同的return行为
+    
+    //下面两个规则更建议改写程序中的for in，改为foreach或map。
+    "guard-for-in": 0,                    //需要约束 for-in  有if判断
+    "no-restricted-syntax": 0,            //禁止使用特定的语法 
+   
+    "react/no-array-index-key": 0,        //循环遍历时不能用index作为key
+    "jsx-a11y/img-has-alt": 0,            //<img>标签需要alt属性
+    "react/forbid-prop-types":0,          //禁用any,array,object这三种proptypes类型，array->arrayOf,object->shape
+
+    //import
+    "import/no-unresolved":0,             //确认import指向可解析的文件/模块
+    "import/no-extraneous-dependencies":0,//在package.json中找不到引用
+    "import/extensions":[2, "never"],     //引用文件的后缀（设置成never则不用写 .js）
+
+    "react/jsx-closing-bracket-location":0,
+    "no-mixed-operators":0,               //禁止混合操作符，改为允许            
+  }
+}

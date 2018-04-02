@@ -1,0 +1,7 @@
+{
+  "name"    : "SmartCell",
+  "version" : "1.6.10",
+  "main"    : "main.js",
+  "dependencies": {
+}
+}

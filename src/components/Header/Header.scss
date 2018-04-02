@@ -1,0 +1,47 @@
+.brand {
+    position: absolute;
+    $size: 40px;
+    top: 5px;
+    left: 5px;
+    display: inline-block;
+    background: url('./logo.png') no-repeat center center;
+    width: $size;
+    height: $size;
+    background-size: 80%;
+    margin: 0 10px 0 0;
+}
+nav :global(.fa) {
+	font-size: 2em;
+	line-height: 20px;
+}
+
+/**
+ * Override Bootstrap styles that you can't modify via variables here.
+ *
+ */
+
+.navbar-brand {
+  position: relative;
+  padding-left: 50px;
+}
+
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.dropdown > ul > li.active > a,
+.dropdown > ul > li.active > a:hover,
+.dropdown > ul > li.active > a:focus,
+.dropdown > ul > li > a:hover,
+.dropdown > ul > li > a:focus {
+  color: #33e0ff;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #33e0ff;
+  background-color: transparent;
+  font-weight: bold;
+}

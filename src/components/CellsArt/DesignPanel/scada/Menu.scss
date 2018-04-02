@@ -1,0 +1,61 @@
+.insertMenu {
+    position: absolute;
+    margin-top: 0;
+    margin-left: -120px;
+    height: 60px;
+    width: 120px;
+    background: #eeeff5;
+    .mainIcon {
+        border-bottom: 1px solid #e0e0e0;
+        height: 60px;
+    }
+}
+
+.toolBox {
+    margin: 0;
+    padding: 0;
+}
+
+.toolBoxItem {
+    list-style: none;
+    padding: 5px 5px;
+}
+
+.currentToolboxItem {
+    background: #ebebeb;
+}
+
+.menuItem {
+    width: 120px;
+    height: 40px;
+    background: #eeeff5;
+    border-bottom: 1px solid #e0e0e0;
+    .showIcon {
+        float: left;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .desc {
+        text-align: left;
+        line-height: 3;
+        width: 150px;
+        font-weight: normal;
+        font-family: Lucida Grande, sans-serif;
+        color: #000000;
+        font-size: 11px;
+    }
+}
+
+.components {
+    width: 120px;
+    height: 40px;
+    font-family: Lucida Grande, sans-serif;
+    color: #000000;
+    font-size: 15px;
+    background: #eeeff5;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}

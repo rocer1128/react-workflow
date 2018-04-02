@@ -1,0 +1,26 @@
+.alert{
+	animation:backgroundtrans 2s;
+	-webkit-animation:backgroundtrans 2s; 
+	-moz-animation:backgroundtrans 2s; 
+	-webkit-animation:backgroundtrans 2s; 
+	-o-animation:backgroundtrans 2s; 
+}
+@keyframes backgroundtrans
+{
+	50% {background-color:red;}
+}
+
+@-moz-keyframes backgroundtrans
+{
+	50% {background-color:red;}
+}
+
+@-webkit-keyframes backgroundtrans
+{
+	50% {background-color:red;}
+}
+
+@-o-keyframes backgroundtrans
+{
+	50% {background-color:red;}
+}

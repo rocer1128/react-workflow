@@ -1,0 +1,80 @@
+#sideTogglel{
+	display:none;
+}
+#sideTogglel:checked ~ .asidel{ left:0px; }
+#sideTogglel:checked ~ .warpl_container > .warpl >label>.arrowsl{border-left-color:#778899;border-right-color:#FFF;}
+#sideTogglel:checked ~ .view{left:210px;}
+#sideTogglel:checked ~ .warpl_container{left:200px;}
+.asidel {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:-200px; 
+	width:200px;
+	transition:0.2s;
+}
+.warpl{
+	position:absolute;
+	top:50%;
+	width: 10px;
+    height: 10px;
+}
+.warpl > label{
+	padding-left: 0;
+	margin-top: 5px;
+    display: block;
+    font-family: Courier New;
+    width: 10px;
+    height: 10px;
+}
+.warpl_container{
+	position:absolute;
+	left:0px;
+	width:10px;
+	top:0px;
+	bottom:0;
+	background:rgb(221, 221, 221);
+	transition: 0.2s;
+
+}
+.scrolll{
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:200px;
+	height: 100%;
+	overflow: auto;
+}
+.arrowsl{
+	border: 5px solid #778899;
+	border-left-color: #FFF;
+	width: 0;
+	height: 0;
+
+}
+.pageview{
+	position:absolute;
+	top:50px;
+	bottom:0;
+	width:100%;
+	border-top: 2px solid rgb(221, 221, 221);
+	margin-left:-15px;
+	margin-right:-15px;
+}
+.view{
+	position:absolute;
+	top:0px;
+	bottom:0;
+	left:10px;
+	right:0px;
+	transition: 0.2s;
+}
+.popWindow {  
+    background-color:#9D9D9D;  
+    width: 100%;  
+    height: 100%;    
+    filter: alpha(opacity=50);  
+    opacity: 0;  
+    z-index: 1;  
+    position: absolute;       
+}
