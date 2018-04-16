@@ -10,3 +10,4 @@
 $ npm install    # Install project dependencies
 $ npm start      # Compile and launch
 ```
+you can see it in localhost:8000
